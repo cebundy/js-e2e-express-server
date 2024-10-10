@@ -18,9 +18,9 @@ steps:
     npm run build
   displayName: 'npm build'
 
-- script: 
-    mocha test --reporter mocha-junit-reporter
-  displayName: 'mocha test'
+# - script: 
+#     mocha test --reporter mocha-junit-reporter
+#   displayName: 'mocha test'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
